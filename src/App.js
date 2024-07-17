@@ -22,7 +22,7 @@ function App() {
       let result = Function('"use strict";return (' + expression + ')')();
       setFinal(result);
     } catch (error) {
-      setFinal(error);
+      setFinal("Error");
     }
   }
 
